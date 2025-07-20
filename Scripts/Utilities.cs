@@ -38,7 +38,7 @@ public class Utilities
     {
         if (Optimizer == null)
         {
-            Optimizer = KannaProteccRoot.GetTypeFromAnyAssembly("Thry.ShaderOptimizer");
+            Optimizer = KannaProteccRoot.GetTypeFromAnyAssembly("Thry.ShaderOptimizer") ?? KannaProteccRoot.GetTypeFromAnyAssembly("Thry.ThryEditor.ShaderOptimizer");
         }
         else
         {
